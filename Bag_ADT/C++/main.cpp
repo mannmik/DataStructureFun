@@ -3,6 +3,7 @@
 
 int main()
 {
+	// create new instance of bag class
 	Bag *myBag = new Bag;
 
 	int firstVal = 3;
@@ -18,5 +19,8 @@ int main()
 	myBag->remove(firstVal);
 	cout << myBag->contains(firstVal);
 
+	// clear memory created
+	delete myBag;
+	myBag = NULL;
 	return 0;
 }
